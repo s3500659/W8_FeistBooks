@@ -10,11 +10,12 @@ import UIKit
 
 class DisplayBookViewController: UIViewController {
     
-    private var viewModel = DisplayBookViewModel()
+    var viewModel: DisplayBookViewModel?
     
     @IBOutlet weak var bookImage: UIImageView!
     
     @IBAction func nextImage(_ sender: Any) {
+        guard let viewModel = viewModel else {return}
         bookImage.image = viewModel.getNextImage()
     }
     

@@ -18,10 +18,10 @@ class AddBookViewController: UIViewController {
     
     @IBOutlet weak var bookList: UITextView!
     
-    private var viewModel = AddBookViewModel()
+    var viewModel: AddBookViewModel?
     
     @IBAction func addBook(_ sender: Any) {
-        guard let title = bookTitle.text, let author = bookAuthor.text, let cover = bookCover.text else {return}
+        guard let title = bookTitle.text, let author = bookAuthor.text, let cover = bookCover.text, let viewModel = viewModel else {return}
         
         viewModel.addBook(title, author, cover)
         
@@ -30,8 +30,10 @@ class AddBookViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let viewModel = viewModel else {return}
         bookList.text = viewModel.bookTitles
     }
+    
 
 
 }

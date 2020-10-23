@@ -10,14 +10,14 @@ import Foundation
 import CoreData
 import UIKit
 
-class BookManager {
+class BookManager: Manager {
     
-    static let shared = BookManager()
+    static let sharedInstance = BookManager()
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     let managedContext: NSManagedObjectContext
     
-    private (set) var books:[Book] = []
+    var books:[Book] = []
     
     private init() {
         managedContext = appDelegate.persistentContainer.viewContext

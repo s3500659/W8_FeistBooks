@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1128.75" y="116.19718309859155"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Book Tab Bar Controller-->
         <scene sceneID="Fpf-Sx-Cv0">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TQh-2c-gKT" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TQh-2c-gKT" customClass="BookTabBarController" customModule="FeistBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Oz-Bu-AlA">
                         <autoresizingMask key="autoresizingMask"/>

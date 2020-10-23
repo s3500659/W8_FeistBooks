@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 
-struct DisplayBookViewModel {
+class DisplayBookViewModel {
     
-    private var bookManager = BookManager.shared
+    private var bookManager: Manager?
+    
     private var bookImage: [UIImage] {
-        let books = bookManager.books
+        guard let books = bookManager?.books else {return []}
         var temp:[UIImage] = []
         
         for (_, book) in books.enumerated() {
@@ -24,7 +25,7 @@ struct DisplayBookViewModel {
     }
     
     private var index:Int = 1
-    mutating func getNextImage() -> UIImage? {
+    func getNextImage() -> UIImage? {
         var image = UIImage(named: "pokemon1")
         if bookImage.count != 0 {
             if bookImage.count == 1 || index == bookImage.count - 1 {
@@ -35,6 +36,10 @@ struct DisplayBookViewModel {
             image = bookImage[index]
         }
         return image
+    }
+    
+    init(model: Manager) {
+        bookManager = model
     }
     
     

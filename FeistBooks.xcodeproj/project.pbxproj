@@ -23,6 +23,8 @@
 		D80ADBB425424395001EB682 /* AddBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB325424395001EB682 /* AddBookViewModel.swift */; };
 		D80ADBB725424D4A001EB682 /* DisplayBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB625424D4A001EB682 /* DisplayBookViewController.swift */; };
 		D80ADBB925424D59001EB682 /* DisplayBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB825424D59001EB682 /* DisplayBookViewModel.swift */; };
+		D80ADBBC25425BC2001EB682 /* BookTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBBB25425BC2001EB682 /* BookTabBarController.swift */; };
+		D80ADBBE25428559001EB682 /* BookProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBBD25428559001EB682 /* BookProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D80ADBB325424395001EB682 /* AddBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewModel.swift; sourceTree = "<group>"; };
 		D80ADBB625424D4A001EB682 /* DisplayBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBookViewController.swift; sourceTree = "<group>"; };
 		D80ADBB825424D59001EB682 /* DisplayBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBookViewModel.swift; sourceTree = "<group>"; };
+		D80ADBBB25425BC2001EB682 /* BookTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTabBarController.swift; sourceTree = "<group>"; };
+		D80ADBBD25428559001EB682 /* BookProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		D80ADB742541272F001EB682 /* FeistBooks */ = {
 			isa = PBXGroup;
 			children = (
+				D80ADBBA25425BAB001EB682 /* TabBar */,
 				D80ADBB525424D23001EB682 /* DisplayBookViewModel */,
 				D80ADBA825412752001EB682 /* ViewModelAddBook */,
 				D80ADBA72541274A001EB682 /* View */,
@@ -182,6 +187,15 @@
 				D80ADBB825424D59001EB682 /* DisplayBookViewModel.swift */,
 			);
 			path = DisplayBookViewModel;
+			sourceTree = "<group>";
+		};
+		D80ADBBA25425BAB001EB682 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADBBB25425BC2001EB682 /* BookTabBarController.swift */,
+				D80ADBBD25428559001EB682 /* BookProtocols.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,9 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D80ADBAD254138AD001EB682 /* Author+CoreDataClass.swift in Sources */,
+				D80ADBBE25428559001EB682 /* BookProtocols.swift in Sources */,
 				D80ADB782541272F001EB682 /* AddBookViewController.swift in Sources */,
 				D80ADBB2254139C1001EB682 /* BookManager.swift in Sources */,
 				D80ADB7E2541272F001EB682 /* FeistBooks.xcdatamodeld in Sources */,
+				D80ADBBC25425BC2001EB682 /* BookTabBarController.swift in Sources */,
 				D80ADBB725424D4A001EB682 /* DisplayBookViewController.swift in Sources */,
 				D80ADBAE254138AD001EB682 /* Author+CoreDataProperties.swift in Sources */,
 				D80ADBAF254138AD001EB682 /* Book+CoreDataClass.swift in Sources */,

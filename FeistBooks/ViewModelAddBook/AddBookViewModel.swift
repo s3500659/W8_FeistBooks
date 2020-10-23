@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-struct AddBookViewModel {
+class AddBookViewModel {
     
-    private let bookManager = BookManager.shared
+    let bookManager: Manager
     
     // computed property
     var bookTitles:String {
@@ -25,10 +25,12 @@ struct AddBookViewModel {
         return result
     }
     
-    mutating func addBook(_ title:String, _ author:String, _ cover:String) {
-        
+    func addBook(_ title:String, _ author:String, _ cover:String) {
         guard let coverImage = UIImage(named: cover) else {return}
-        
         bookManager.addBook(title, author, coverImage)
+    }
+    
+    init(model: Manager) {
+        bookManager = model
     }
 }
