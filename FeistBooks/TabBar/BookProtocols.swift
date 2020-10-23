@@ -14,3 +14,12 @@ protocol Manager {
     var books:[Book] {get}
     func addBook(_ title:String, _ author:String, _ image:UIImage)
 }
+
+protocol DisplayViewModel {
+    func getNextImage() -> UIImage?
+}
+
+protocol AddViewModel {
+    var bookTitles:String {get}
+    func addBook(_ title:String, _ author:String, _ cover:String)
+}

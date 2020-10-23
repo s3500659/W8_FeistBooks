@@ -10,7 +10,7 @@ import UIKit
 
 class DisplayBookViewController: UIViewController {
     
-    var viewModel: DisplayBookViewModel?
+    var viewModel: DisplayViewModel?
     
     @IBOutlet weak var bookImage: UIImageView!
     

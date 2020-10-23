@@ -18,7 +18,7 @@ class AddBookViewController: UIViewController {
     
     @IBOutlet weak var bookList: UITextView!
     
-    var viewModel: AddBookViewModel?
+    var viewModel: AddViewModel?
     
     @IBAction func addBook(_ sender: Any) {
         guard let title = bookTitle.text, let author = bookAuthor.text, let cover = bookCover.text, let viewModel = viewModel else {return}

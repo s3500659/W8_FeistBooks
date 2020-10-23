@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AddBookViewModel {
+class AddBookViewModel: AddViewModel {
     
     let bookManager: Manager
     

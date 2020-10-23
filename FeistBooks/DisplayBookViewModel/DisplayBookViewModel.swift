@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DisplayBookViewModel {
+class DisplayBookViewModel: DisplayViewModel {
     
     private var bookManager: Manager?
     
