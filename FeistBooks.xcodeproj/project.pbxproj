@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D80ADB762541272F001EB682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADB752541272F001EB682 /* AppDelegate.swift */; };
+		D80ADB782541272F001EB682 /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADB772541272F001EB682 /* AddBookViewController.swift */; };
+		D80ADB7B2541272F001EB682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80ADB792541272F001EB682 /* Main.storyboard */; };
+		D80ADB7E2541272F001EB682 /* FeistBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D80ADB7C2541272F001EB682 /* FeistBooks.xcdatamodeld */; };
+		D80ADB8025412730001EB682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80ADB7F25412730001EB682 /* Assets.xcassets */; };
+		D80ADB8325412730001EB682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80ADB8125412730001EB682 /* LaunchScreen.storyboard */; };
+		D80ADB8E25412731001EB682 /* FeistBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADB8D25412731001EB682 /* FeistBooksTests.swift */; };
+		D80ADB9925412731001EB682 /* FeistBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADB9825412731001EB682 /* FeistBooksUITests.swift */; };
+		D80ADBAD254138AD001EB682 /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBA9254138AD001EB682 /* Author+CoreDataClass.swift */; };
+		D80ADBAE254138AD001EB682 /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBAA254138AD001EB682 /* Author+CoreDataProperties.swift */; };
+		D80ADBAF254138AD001EB682 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBAB254138AD001EB682 /* Book+CoreDataClass.swift */; };
+		D80ADBB0254138AD001EB682 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBAC254138AD001EB682 /* Book+CoreDataProperties.swift */; };
+		D80ADBB2254139C1001EB682 /* BookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB1254139C1001EB682 /* BookManager.swift */; };
+		D80ADBB425424395001EB682 /* AddBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB325424395001EB682 /* AddBookViewModel.swift */; };
+		D80ADBB725424D4A001EB682 /* DisplayBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB625424D4A001EB682 /* DisplayBookViewController.swift */; };
+		D80ADBB925424D59001EB682 /* DisplayBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80ADBB825424D59001EB682 /* DisplayBookViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D80ADB8A25412731001EB682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80ADB6A2541272F001EB682 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80ADB712541272F001EB682;
+			remoteInfo = FeistBooks;
+		};
+		D80ADB9525412731001EB682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80ADB6A2541272F001EB682 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80ADB712541272F001EB682;
+			remoteInfo = FeistBooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D80ADB722541272F001EB682 /* FeistBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeistBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80ADB752541272F001EB682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D80ADB772541272F001EB682 /* AddBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		D80ADB7A2541272F001EB682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D80ADB7D2541272F001EB682 /* FeistBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeistBooks.xcdatamodel; sourceTree = "<group>"; };
+		D80ADB7F25412730001EB682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D80ADB8225412730001EB682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D80ADB8425412730001EB682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80ADB8925412731001EB682 /* FeistBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeistBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80ADB8D25412731001EB682 /* FeistBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeistBooksTests.swift; sourceTree = "<group>"; };
+		D80ADB8F25412731001EB682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80ADB9425412731001EB682 /* FeistBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeistBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80ADB9825412731001EB682 /* FeistBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeistBooksUITests.swift; sourceTree = "<group>"; };
+		D80ADB9A25412731001EB682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80ADBA9254138AD001EB682 /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D80ADBAA254138AD001EB682 /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D80ADBAB254138AD001EB682 /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D80ADBAC254138AD001EB682 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D80ADBB1254139C1001EB682 /* BookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookManager.swift; sourceTree = "<group>"; };
+		D80ADBB325424395001EB682 /* AddBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewModel.swift; sourceTree = "<group>"; };
+		D80ADBB625424D4A001EB682 /* DisplayBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBookViewController.swift; sourceTree = "<group>"; };
+		D80ADBB825424D59001EB682 /* DisplayBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBookViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D80ADB6F2541272F001EB682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80ADB8625412731001EB682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80ADB9125412731001EB682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D80ADB692541272F001EB682 = {
+			isa = PBXGroup;
+			children = (
+				D80ADB742541272F001EB682 /* FeistBooks */,
+				D80ADB8C25412731001EB682 /* FeistBooksTests */,
+				D80ADB9725412731001EB682 /* FeistBooksUITests */,
+				D80ADB732541272F001EB682 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D80ADB732541272F001EB682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADB722541272F001EB682 /* FeistBooks.app */,
+				D80ADB8925412731001EB682 /* FeistBooksTests.xctest */,
+				D80ADB9425412731001EB682 /* FeistBooksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D80ADB742541272F001EB682 /* FeistBooks */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADBB525424D23001EB682 /* DisplayBookViewModel */,
+				D80ADBA825412752001EB682 /* ViewModelAddBook */,
+				D80ADBA72541274A001EB682 /* View */,
+				D80ADBA625412740001EB682 /* Model */,
+				D80ADB752541272F001EB682 /* AppDelegate.swift */,
+				D80ADB7F25412730001EB682 /* Assets.xcassets */,
+				D80ADB8125412730001EB682 /* LaunchScreen.storyboard */,
+				D80ADB8425412730001EB682 /* Info.plist */,
+			);
+			path = FeistBooks;
+			sourceTree = "<group>";
+		};
+		D80ADB8C25412731001EB682 /* FeistBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADB8D25412731001EB682 /* FeistBooksTests.swift */,
+				D80ADB8F25412731001EB682 /* Info.plist */,
+			);
+			path = FeistBooksTests;
+			sourceTree = "<group>";
+		};
+		D80ADB9725412731001EB682 /* FeistBooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADB9825412731001EB682 /* FeistBooksUITests.swift */,
+				D80ADB9A25412731001EB682 /* Info.plist */,
+			);
+			path = FeistBooksUITests;
+			sourceTree = "<group>";
+		};
+		D80ADBA625412740001EB682 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADBA9254138AD001EB682 /* Author+CoreDataClass.swift */,
+				D80ADBAA254138AD001EB682 /* Author+CoreDataProperties.swift */,
+				D80ADBAB254138AD001EB682 /* Book+CoreDataClass.swift */,
+				D80ADBAC254138AD001EB682 /* Book+CoreDataProperties.swift */,
+				D80ADB7C2541272F001EB682 /* FeistBooks.xcdatamodeld */,
+				D80ADBB1254139C1001EB682 /* BookManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D80ADBA72541274A001EB682 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADB792541272F001EB682 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D80ADBA825412752001EB682 /* ViewModelAddBook */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADB772541272F001EB682 /* AddBookViewController.swift */,
+				D80ADBB325424395001EB682 /* AddBookViewModel.swift */,
+			);
+			path = ViewModelAddBook;
+			sourceTree = "<group>";
+		};
+		D80ADBB525424D23001EB682 /* DisplayBookViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D80ADBB625424D4A001EB682 /* DisplayBookViewController.swift */,
+				D80ADBB825424D59001EB682 /* DisplayBookViewModel.swift */,
+			);
+			path = DisplayBookViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D80ADB712541272F001EB682 /* FeistBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80ADB9D25412731001EB682 /* Build configuration list for PBXNativeTarget "FeistBooks" */;
+			buildPhases = (
+				D80ADB6E2541272F001EB682 /* Sources */,
+				D80ADB6F2541272F001EB682 /* Frameworks */,
+				D80ADB702541272F001EB682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeistBooks;
+			productName = FeistBooks;
+			productReference = D80ADB722541272F001EB682 /* FeistBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D80ADB8825412731001EB682 /* FeistBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80ADBA025412731001EB682 /* Build configuration list for PBXNativeTarget "FeistBooksTests" */;
+			buildPhases = (
+				D80ADB8525412731001EB682 /* Sources */,
+				D80ADB8625412731001EB682 /* Frameworks */,
+				D80ADB8725412731001EB682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80ADB8B25412731001EB682 /* PBXTargetDependency */,
+			);
+			name = FeistBooksTests;
+			productName = FeistBooksTests;
+			productReference = D80ADB8925412731001EB682 /* FeistBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D80ADB9325412731001EB682 /* FeistBooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80ADBA325412731001EB682 /* Build configuration list for PBXNativeTarget "FeistBooksUITests" */;
+			buildPhases = (
+				D80ADB9025412731001EB682 /* Sources */,
+				D80ADB9125412731001EB682 /* Frameworks */,
+				D80ADB9225412731001EB682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80ADB9625412731001EB682 /* PBXTargetDependency */,
+			);
+			name = FeistBooksUITests;
+			productName = FeistBooksUITests;
+			productReference = D80ADB9425412731001EB682 /* FeistBooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D80ADB6A2541272F001EB682 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Vinh Tran";
+				TargetAttributes = {
+					D80ADB712541272F001EB682 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					D80ADB8825412731001EB682 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = D80ADB712541272F001EB682;
+					};
+					D80ADB9325412731001EB682 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = D80ADB712541272F001EB682;
+					};
+				};
+			};
+			buildConfigurationList = D80ADB6D2541272F001EB682 /* Build configuration list for PBXProject "FeistBooks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D80ADB692541272F001EB682;
+			productRefGroup = D80ADB732541272F001EB682 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D80ADB712541272F001EB682 /* FeistBooks */,
+				D80ADB8825412731001EB682 /* FeistBooksTests */,
+				D80ADB9325412731001EB682 /* FeistBooksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D80ADB702541272F001EB682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80ADB8325412730001EB682 /* LaunchScreen.storyboard in Resources */,
+				D80ADB8025412730001EB682 /* Assets.xcassets in Resources */,
+				D80ADB7B2541272F001EB682 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80ADB8725412731001EB682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80ADB9225412731001EB682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D80ADB6E2541272F001EB682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80ADBAD254138AD001EB682 /* Author+CoreDataClass.swift in Sources */,
+				D80ADB782541272F001EB682 /* AddBookViewController.swift in Sources */,
+				D80ADBB2254139C1001EB682 /* BookManager.swift in Sources */,
+				D80ADB7E2541272F001EB682 /* FeistBooks.xcdatamodeld in Sources */,
+				D80ADBB725424D4A001EB682 /* DisplayBookViewController.swift in Sources */,
+				D80ADBAE254138AD001EB682 /* Author+CoreDataProperties.swift in Sources */,
+				D80ADBAF254138AD001EB682 /* Book+CoreDataClass.swift in Sources */,
+				D80ADBB925424D59001EB682 /* DisplayBookViewModel.swift in Sources */,
+				D80ADBB0254138AD001EB682 /* Book+CoreDataProperties.swift in Sources */,
+				D80ADBB425424395001EB682 /* AddBookViewModel.swift in Sources */,
+				D80ADB762541272F001EB682 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80ADB8525412731001EB682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80ADB8E25412731001EB682 /* FeistBooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80ADB9025412731001EB682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80ADB9925412731001EB682 /* FeistBooksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D80ADB8B25412731001EB682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80ADB712541272F001EB682 /* FeistBooks */;
+			targetProxy = D80ADB8A25412731001EB682 /* PBXContainerItemProxy */;
+		};
+		D80ADB9625412731001EB682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80ADB712541272F001EB682 /* FeistBooks */;
+			targetProxy = D80ADB9525412731001EB682 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D80ADB792541272F001EB682 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80ADB7A2541272F001EB682 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D80ADB8125412730001EB682 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80ADB8225412730001EB682 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D80ADB9B25412731001EB682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D80ADB9C25412731001EB682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D80ADB9E25412731001EB682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5GVRVPF8M;
+				INFOPLIST_FILE = FeistBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.FeistBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D80ADB9F25412731001EB682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5GVRVPF8M;
+				INFOPLIST_FILE = FeistBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.FeistBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D80ADBA125412731001EB682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5GVRVPF8M;
+				INFOPLIST_FILE = FeistBooksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.FeistBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeistBooks.app/FeistBooks";
+			};
+			name = Debug;
+		};
+		D80ADBA225412731001EB682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5GVRVPF8M;
+				INFOPLIST_FILE = FeistBooksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.FeistBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeistBooks.app/FeistBooks";
+			};
+			name = Release;
+		};
+		D80ADBA425412731001EB682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5GVRVPF8M;
+				INFOPLIST_FILE = FeistBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.FeistBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeistBooks;
+			};
+			name = Debug;
+		};
+		D80ADBA525412731001EB682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5GVRVPF8M;
+				INFOPLIST_FILE = FeistBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.FeistBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeistBooks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D80ADB6D2541272F001EB682 /* Build configuration list for PBXProject "FeistBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80ADB9B25412731001EB682 /* Debug */,
+				D80ADB9C25412731001EB682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80ADB9D25412731001EB682 /* Build configuration list for PBXNativeTarget "FeistBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80ADB9E25412731001EB682 /* Debug */,
+				D80ADB9F25412731001EB682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80ADBA025412731001EB682 /* Build configuration list for PBXNativeTarget "FeistBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80ADBA125412731001EB682 /* Debug */,
+				D80ADBA225412731001EB682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80ADBA325412731001EB682 /* Build configuration list for PBXNativeTarget "FeistBooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80ADBA425412731001EB682 /* Debug */,
+				D80ADBA525412731001EB682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D80ADB7C2541272F001EB682 /* FeistBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D80ADB7D2541272F001EB682 /* FeistBooks.xcdatamodel */,
+			);
+			currentVersion = D80ADB7D2541272F001EB682 /* FeistBooks.xcdatamodel */;
+			path = FeistBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D80ADB6A2541272F001EB682 /* Project object */;
+}
